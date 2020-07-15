@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background:  #61F2F5;
+    color: black;
+}
+a:hover{
+    text-decoration: none;
+}
+#btn1{
+    background-color: #723881 !important;
+    border-radius: 5px;
+    width: 289px;
+}
+#btn2{
+    border: 3px solid #723881;
+    border-radius: 5px;
+}
+#btn1:hover{
+
+}
+.wrapper-img{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#rec50{
+    background: url('../img/Rectangle\ 50.png');
+    background-repeat: no-repeat;
+}
+.card{
+    background:  #61F2F5 !important;
+    color: black;
+}
+#card-2{
+    background: #FFFFFF !important;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+#investa{
+    background: #723881;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px){
+    .display-4{
+        font-size: 34px !important;
+        text-align: center !important;
+    }
+    .lead{
+        font-size: 20px !important;
+        text-align: center !important;
+    }
+    footer{
+        justify-content: center !important;
+        align-content: center !important;
+        text-align: center;
+    }
+    footer a:hover{
+        text-decoration: none !important;
+    }
+}
