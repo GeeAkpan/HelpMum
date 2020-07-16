@@ -1,8 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
+:root {
+    --animate-duration: 800ms;
+    --animate-delay: 0.9s;
+  }
 
 header{
     background:  #61F2F5;
@@ -11,20 +18,11 @@ header{
 a:hover{
     text-decoration: none;
 }
-#btn1{
-    background-color: #723881 !important;
-    border-radius: 5px;
-    width: 289px;
-}
-#btn2{
-    border: 3px solid #723881;
-    border-radius: 5px;
-}
-#btn1:hover{
 
-}
-.wrapper-img{
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+.form-control{
+    border: 1px solid #333333 !important;
+    border-radius: 5px;
+    background-color: #61F2F5 !important;
 }
 #rec50{
     background: url('../img/Rectangle\ 50.png');
@@ -33,6 +31,14 @@ a:hover{
 .card{
     background:  #61F2F5 !important;
     color: black;
+    width: 366px;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+
+}
+.card p{
+    font-size: 20px !important;
 }
 #card-2{
     background: #FFFFFF !important;
@@ -41,21 +47,35 @@ a:hover{
 #investa{
     background: #723881;
 }
+#download-but{
+    background: #FFFFFF;
+    border-radius: 5px;
+    color: #723881;
+}
 
 /* Media Queries */
 @media screen and (max-width: 768px){
+    #wrapper-1{
+        padding-top: 20px !important;
+    }
+    .navbar-brand .text-dark{
+        color:white !important;
+    }
     .display-4{
         font-size: 34px !important;
+        text-align: center !important;
+    }
+    .display-6{
         text-align: center !important;
     }
     .lead{
         font-size: 20px !important;
         text-align: center !important;
     }
-    footer{
+    footer .container-fluid{
         justify-content: center !important;
         align-content: center !important;
-        text-align: center;
+        text-align: left;
     }
     footer a:hover{
         text-decoration: none !important;
