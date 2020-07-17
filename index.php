@@ -152,7 +152,7 @@ if (isset($JoinList)) {
                 </p>
             </div>
 
-            <div class="col-lg-6 ml-auto">
+            <div class="col-lg-6 ml-auto text-center">
                 <img src="img/Pixel 3 XL (6) 1.png" class="img-fluid">
             </div>
         </div>
