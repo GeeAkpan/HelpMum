@@ -1,3 +1,46 @@
+<?php
+extract($_POST);
+
+$dsn = "mysql:host=localhost;dbname=HelpMum";
+$uName = "root";
+$pass = "root1234";
+
+try{
+    $conn = new PDO($dsn,$uName,$pass);
+    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+}catch(PDOException $e){
+    echo $e->getMessage();
+}
+
+
+
+if (isset($JoinList)) {
+   if (!empty($email)) {
+       $sql = "INSERT INTO user_emails(email) VALUES('$email')";
+       $row =$conn->query($sql);
+       if ($row) {
+            echo '<div class="bg-success" id="report">';
+            echo '<p> Congrats! Your emails has been submitted';
+            echo "</div>";
+       }else {
+        echo '<div class="bg-danger" id="report2">';
+        echo '<p> Oops! There was an submitting your email';
+        echo "</div>";
+       }
+   }else {
+    echo '<div class="bg-danger" id="report">';
+    echo '<p> Oops! Field must not be empty';
+    echo "</div>";
+   }
+}
+?>
+
+
+
+
+
+
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -63,7 +106,7 @@
                         <div class="input-group mb-3">
                         <input type="text" class="form-control" placeholder="Join Our Mailing List" aria-label="Recipient's username" aria-describedby="basic-addon2">
                         <div class="input-group-append">
-                            <span class="input-group-text" id="basic-addon2">JOIN LIST</span>
+                            <span class="input-group-text animate__animated animate__bounce animate__slower" id="basic-addon2"><a href="#" class="text-white">JOIN LIST</a></span>
                         </div>
                         </div>
                     </div>
@@ -97,10 +140,10 @@
     </section>
 
     <section>
-        <div class="container-fluid row p-5" data-aos="zoom-in-up">
-            <div class="col-lg-8 p-5">
+        <div class="container-fluid row p-5">
+            <div class="col-lg-12 p-5">
                 <h2 class="display-4">
-                    Current Statistics of Women Struggling Through Pregnancy
+                    Preview of the App
                 </h2>
                 <p class="lead">
                     Yearly loads of women experience 
@@ -110,50 +153,39 @@
             </div>
         </div>
         
-        <div class="container-fluid row ml-auto" id="card-setion">
-            <div class="col-lg-4 mt-3">
-                <div class="card p-5">
-                    <p class="lead text-center p-3">
-                        70% of Women Live In Porvety and Earn only 10% of the World’s Income
-                    </p>
+        <div class="container-fluid text-center col-lg-12 col-sm-12 row ml-auto" id="card-setion">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner ml-auto">
+                  <div class="carousel-item active">
+                    <img class="d-block w-100 img-fluid" src="img/Pixel 3 XL (6) 1.png" alt="First slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="img/Pixel 3 XL (7) 2.png" alt="Second slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="img/Pixel 3 XL (8) 1.png" alt="Third slide">
+                  </div>
+                   <div class="carousel-item">
+                    <img class="d-block w-100" src="img/Pixel 3 XL (8) 2.png" alt="Third slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="img/Pixel 3 XL (8) 3.png" alt="Third slide">
+                  </div>
                 </div>
-            </div>
-            <div class="col-lg-4 mt-3">
-                <div class="card p-5">
-                    <p class="lead text-center p-3">
-                        62% of women in Nigeria are uneducated adults and know little about modern way of child-bearing
-                    </p>
-                </div>
-            </div>
-            <div class="col-lg-4 mt-3">
-                <div class="card p-5">
-                    <p class="lead text-center p-3">
-                        62% of women in Nigeria are uneducated adults and know little about modern way of child-bearing
-                    </p>
-                </div>
-            </div>
-            <div class="col-lg-4 mt-5">
-                <div class="card p-5">
-                    <p class="lead text-center p-3">
-                        23% of women aged 15-19 years have begun childbearing
-                    </p>
-                </div>
-            </div>
-            <div class="col-lg-4 mt-5">
-                <div class="card p-5">
-                    <p class="lead text-center p-3">
-                        23% of women aged 15-19 years have begun childbearing
-                    </p>
-                </div>
-            </div>
-            <div class="col-lg-4 mt-5">
-                <div class="card p-5">
-                    <p class="lead text-center p-3">
-                        Almost 50% of pregnant women are anemic, 
-                        13.1% are under weight.
-                    </p>
-                </div>
-            </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
         </div>
     </section>
  
@@ -177,58 +209,9 @@
         
     </section>
 
-    <section class="p-5" id="investa">
-        <div class="container-fluid pt-5">
-            <h1 class="display-4 text-center text-white">Help Mum App</h1>
-            <h2 class="display-5 py-3 text-center text-white">Coming Soon To Your Mobile Phones</h2>
-        </div>
-        <div class="container-fluid row d-flex align-item-center justify-content-center">
-           <button class="btn mr-3" id="download-but"><span><img src="/img/google-play.png" class="img-fluid"></span>Download</button>
-           <button class="btn" id="download-but"><i class="fab fa-apple mr-1"></i>Download</button>
-        </div>
-    </section>
-
+   
     <footer>
-        <div class="container-fluid row p-5">
-            <div class="col-lg-6">
-                <h1 class="display-4">
-                    Help Mum
-                </h1>
-                <p class="lead">
-                    At helpmum, women don’t go through Pregnancy only by
-                    themselves. The community goes with them,
-                    stays with them and comes back with them.
-                </p>
-            </div>
-            <div class="col-lg-6">
-                <div class="row">
-                    <div class="col-lg-4">
-                       <ul>
-                           <li class="nav-link">Product</li>
-                           <li class="nav-link"><a href="#">DiagnoseMum</a></li>
-                       </ul>
-                    </div>
-                    <div class="col-lg-4">
-                        <ul>
-                            <li class="nav-link">Company</li>
-                            <li class="nav-link"><a href="#">About</a></li>
-                            <li class="nav-link"><a href="#">News</a></li>
-                            <li class="nav-link"><a href="#">Team</a></li>
-                            <li class="nav-link"><a href="#">HelpMum Podcast</a></li>
-                        </ul>
-                     </div>
-                     <div class="col-lg-4">
-                        <ul>
-                            <li class="nav-link">Follow Us</li>
-                            <li class="nav-link"><a href="#"><i class="fa fa-facebook mr-3"></i>Facebook</a></li>
-                            <li class="nav-link"><a href="#"><i class="fa fa-instagram mr-3"></i>Instagram</a></li>
-                            <li class="nav-link"><a href="#"><i class="fa fa-twitter mr-3"></i>Twitter</a></li>
-                            <li class="nav-link"><a href="#"><i class="fa fa-whatsapp mr-3"></i>Whatsapp</a></li>
-                        </ul>
-                     </div>
-                </div>
-            </div>
-        </div>
+       
     </footer>
 
     <!-- Optional JavaScript -->

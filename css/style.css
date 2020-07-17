@@ -15,11 +15,19 @@ header{
     background:  #61F2F5;
     color: black;
 }
-a:hover{
-    text-decoration: none;
+.nav-link img:hover{
+    transform: scale(3.001);
+    -webkit-transform: scale(1.2);
+    transition-duration: 3s;
 }
 .navbar-brand{
     font-size: 24px !important;
+    font-weight: bolder !important;
+}
+.navbar-brand{
+    transform: scale(3.001);
+    -webkit-transform: scale(1.2);
+    transition-duration: 3s;
 }
 .form-control{
     border: 1px solid #333333 !important;
@@ -35,6 +43,11 @@ a:hover{
 #rec50{
     background: url('../img/Rectangle\ 50.png');
     background-repeat: no-repeat;
+}
+
+.input-group-text a:hover{
+    text-decoration: none;
+    color: rgb(109, 104, 104)21, 111, 111);
 }
 .card{
     background:  #61F2F5 !important;
@@ -64,6 +77,7 @@ a:hover{
     color: #723881;
 }
 
+
 /* Media Queries */
 @media screen and (max-width: 768px){
     #wrapper-1{
@@ -72,8 +86,17 @@ a:hover{
     .navbar-brand .text-dark{
         color:white !important;
     }
+    .display-5{
+        font-size: 34px !important;
+        text-align: center;
+        font-weight: bolder;
+    }
     .display-4{
         font-size: 34px !important;
+        text-align: center !important;
+    }
+    h2 .display-4{
+        font-size: 30px !important;
         text-align: center !important;
     }
     .display-6{
