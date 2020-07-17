@@ -18,11 +18,19 @@ header{
 a:hover{
     text-decoration: none;
 }
-
+.navbar-brand{
+    font-size: 24px !important;
+}
 .form-control{
     border: 1px solid #333333 !important;
     border-radius: 5px;
+    border-right: none;
     background-color: #61F2F5 !important;
+}
+#basic-addon2{
+    background: #723881;
+    color:white!important;
+    border-left: none;
 }
 #rec50{
     background: url('../img/Rectangle\ 50.png');
@@ -39,6 +47,9 @@ a:hover{
 }
 .card p{
     font-size: 20px !important;
+}
+#card-section{
+    background: rgba(248, 248, 248, 0.4);
 }
 #card-2{
     background: #FFFFFF !important;
@@ -67,6 +78,9 @@ a:hover{
     }
     .display-6{
         text-align: center !important;
+    }
+    .card p{
+        font-size: 15px !important;
     }
     .lead{
         font-size: 20px !important;
