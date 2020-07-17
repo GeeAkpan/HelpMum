@@ -158,13 +158,13 @@ if (isset($JoinList)) {
         </div>
 
         <div class="row ml-auto">
-            <div class="col-lg-4 ml-auto">
+            <div class="col-lg-4 ml-auto text-center">
                 <img src="img/Pixel 3 XL (7) 2.png" class="img-fluid">
             </div>
-            <div class="col-lg-4 ml-auto">
+            <div class="col-lg-4 ml-auto text-center">
                 <img src="img/Pixel 3 XL (8) 1.png" class="img-fluid">
             </div>
-            <div class="col-lg-4 ml-auto">
+            <div class="col-lg-4 ml-auto text-center">
                 <img src="img/Pixel 3 XL (8) 2.png" class="img-fluid">
             </div>
         </div>
