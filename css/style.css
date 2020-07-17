@@ -112,9 +112,5 @@ header{
     footer .container-fluid{
         justify-content: center !important;
         align-content: center !important;
-        text-align: left;
-    }
-    footer a:hover{
-        text-decoration: none !important;
     }
 }

@@ -211,6 +211,9 @@ if (isset($JoinList)) {
 
    
     <footer>
+        <div class="container-fluid text-center">
+            @ Copyright HelpMUM 2020
+        </div>
        
     </footer>
 
