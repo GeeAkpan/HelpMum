@@ -153,48 +153,12 @@ if (isset($JoinList)) {
             </div>
         </div>
         
-        <div class="container-fluid text-center col-lg-12 col-sm-12 row ml-auto" id="card-setion">
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner ml-auto">
-                  <div class="carousel-item active">
-                    <img class="d-block w-100 img-fluid" src="img/Pixel 3 XL (6) 1.png" alt="First slide">
-                  </div>
-                  <div class="carousel-item">
-                    <img class="d-block w-100" src="img/Pixel 3 XL (7) 2.png" alt="Second slide">
-                  </div>
-                  <div class="carousel-item">
-                    <img class="d-block w-100" src="img/Pixel 3 XL (8) 1.png" alt="Third slide">
-                  </div>
-                   <div class="carousel-item">
-                    <img class="d-block w-100" src="img/Pixel 3 XL (8) 2.png" alt="Third slide">
-                  </div>
-                  <div class="carousel-item">
-                    <img class="d-block w-100" src="img/Pixel 3 XL (8) 3.png" alt="Third slide">
-                  </div>
-                </div>
-                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Next</span>
-                </a>
-              </div>
-        </div>
-    </section>
- 
-
+       
     <section class="py-5 mt-5 px-0">
         <div class="container-fluid p-0 m-0 row">
-            <div class="col-lg-5 p-5">
+            <div class="col-lg-6 p-5">
                 <h1 class="display-4">
-                    About HelpMum
+                   Preview of App
                 </h1>
                 <p class="lead">
                     Helpmum is a pregnancy tracking platform that helps identify women who may be in need 
@@ -202,19 +166,34 @@ if (isset($JoinList)) {
                 </p>
             </div>
 
-            <div class="col-lg-7">
-
+            <div class="col-lg-6 ml-auto">
+                <img src="img/Pixel 3 XL (6) 1.png" class="img-fluid">
             </div>
         </div>
+
+        <div class="row ml-auto">
+            <div class="col-lg-4 ml-auto">
+                <img src="img/Pixel 3 XL (7) 2.png" class="img-fluid">
+            </div>
+            <div class="col-lg-4 ml-auto">
+                <img src="img/Pixel 3 XL (8) 1.png" class="img-fluid">
+            </div>
+            <div class="col-lg-4 ml-auto">
+                <img src="img/Pixel 3 XL (8) 2.png" class="img-fluid">
+            </div>
+        </div>
+        <div class="row d-flex justify-content-center">
+            <img src="img/Pixel 3 XL (8) 3.png" class="img-fluid">
+        </div>
+            
         
     </section>
 
    
     <footer>
-        <div class="container-fluid text-center">
-            @ Copyright HelpMUM 2020
+        <div class="container-fluid text-center text-center text-white p-5" id="foot">
+            <h2 class="display-6">@ Copyright HelpMUM 2020</h2>
         </div>
-       
     </footer>
 
     <!-- Optional JavaScript -->

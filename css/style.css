@@ -49,33 +49,11 @@ header{
     text-decoration: none;
     color: rgb(109, 104, 104)21, 111, 111);
 }
-.card{
-    background:  #61F2F5 !important;
-    color: black;
-    width: 366px;
-    height: 200px;
-    justify-content: center;
-    align-items: center;
+#foot{
+    background-color: #723881;
+}
 
-}
-.card p{
-    font-size: 20px !important;
-}
-#card-section{
-    background: rgba(248, 248, 248, 0.4);
-}
-#card-2{
-    background: #FFFFFF !important;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-}
-#investa{
-    background: #723881;
-}
-#download-but{
-    background: #FFFFFF;
-    border-radius: 5px;
-    color: #723881;
-}
+
 
 
 /* Media Queries */
