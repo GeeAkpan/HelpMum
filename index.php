@@ -138,21 +138,7 @@ if (isset($JoinList)) {
             </div>
         </div>
     </section>
-
-    <section>
-        <div class="container-fluid row p-5">
-            <div class="col-lg-12 p-5">
-                <h2 class="display-4">
-                    Preview of the App
-                </h2>
-                <p class="lead">
-                    Yearly loads of women experience 
-                    birth challenges because of little problems 
-                    like unhealthy eating lifestyle and <a href="#">...</a>
-                </p>
-            </div>
-        </div>
-        
+      
        
     <section class="py-5 mt-5 px-0">
         <div class="container-fluid p-0 m-0 row">
@@ -185,7 +171,6 @@ if (isset($JoinList)) {
         <div class="row d-flex justify-content-center">
             <img src="img/Pixel 3 XL (8) 3.png" class="img-fluid">
         </div>
-            
         
     </section>
 
